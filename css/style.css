@@ -10032,6 +10032,20 @@ h6,
   background: #da9f5b;
 }
 
+.image-container {
+  width: 100%;
+  max-width: 300px; /* Maksimum genişlik */
+  aspect-ratio: 1; /* Genişlik ve yükseklik oranı eşit */
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .testimonial-carousel .owl-dots {
   margin-top: 30px;
   text-align: center;
