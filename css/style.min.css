@@ -3760,8 +3760,31 @@ input[type="button"].btn-block {
 }
 
 .logo {
-  width: 280px;
+  width: 280px; /* Varsayılan genişlik */
+  height: auto; /* Oranını korur */
 }
+
+/* Telefonlar için */
+@media (max-width: 768px) {
+  .logo {
+    width: 200px; /* Daha küçük bir genişlik */
+  }
+}
+
+/* Tabletler için */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logo {
+    width: 280px; /* Orta boy genişlik */
+  }
+}
+
+/* Büyük ekranlar için */
+@media (min-width: 1025px) {
+  .logo {
+    width: 280px; /* Daha büyük genişlik */
+  }
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
